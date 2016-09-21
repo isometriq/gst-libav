@@ -364,11 +364,11 @@ else
         --disable-avdevice --disable-postproc \
         --disable-programs --disable-ffserver --disable-ffplay --disable-ffprobe --disable-ffmpeg \
         --disable-encoder=flac --disable-protocols --disable-devices \
-        --disable-network --disable-hwaccels --disable-dxva2 --disable-vdpau \
+        --disable-network --enable-hwaccel=hevc_cuvid --enable-decoder=hevc --disable-dxva2 --disable-vdpau \
         --disable-filters --enable-filter=yadif --disable-doc --disable-vda --disable-d3d11va --disable-dxva2 \
         --disable-audiotoolbox --disable-videotoolbox --disable-vaapi --disable-crystalhd \
         --disable-mediacodec --disable-nvenc --disable-mmal --disable-omx \
-        --disable-omx-rpi --disable-cuda --disable-cuvid --disable-libmfx \
+        --disable-omx-rpi --enable-nonfree --disable-libmfx \
         --disable-libnpp --disable-iconv --disable-jni --enable-optimizations"
 
   if test "x$enable_gpl" == "xyes"; then
